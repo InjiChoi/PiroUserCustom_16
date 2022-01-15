@@ -8,7 +8,7 @@
     </head>
     <body>
         {% if user.is_authenticated %} 
-        <li><a href="{% url 'users:logout' %}">Logout</a></li>
+        <li><a href="{% url 'users:log_out' %}">Logout</a></li>
         {% else %}
         <li><a href="{% url 'users:login' %}">Login</a></li>
         <li><a href="{% url 'users:signup' %}">Signup</a></li>
